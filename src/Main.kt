@@ -71,7 +71,7 @@ fun genReport(scores: Map<String, Int>) {
         println("No student data available.")
         return
     }
-    println("Grades Report")
+    println("Students Grades Report")
     scores
         .filter { it.value >= 60 }                      // filters students that succeed
         .map { "${it.key}: ${it.value}" }               // formating
